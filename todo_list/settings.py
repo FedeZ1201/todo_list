@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
 ]
-CSRF_TRUSTED_ORIGINS = ["https://todolist-fedez.up.railway.app/","https://todolist-fedez.up.railway.app/admin"]
+CSRF_TRUSTED_ORIGINS = ["https://todolist-fedez.up.railway.app"]
 
 ROOT_URLCONF = 'todo_list.urls'
 
