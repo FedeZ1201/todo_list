@@ -48,7 +48,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
+CSRF_TRUSTED_ORIGINS = ["https://railway.app"]
 
 ROOT_URLCONF = 'todo_list.urls'
 
