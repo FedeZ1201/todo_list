@@ -10,8 +10,8 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 
 from .models import Task
-
-
+from django.views.decorators.csrf import csrf_protect
+@csrf_protect
 class CustomLoginView(LoginView):
     template_name = 'base/login.html'
     fields = '__all__'
