@@ -11,7 +11,10 @@ from django.contrib.auth import login
 
 from .models import Task
 from django.views.decorators.csrf import csrf_protect
-@csrf_protect
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
+
+@method_decorator(csrf_exempt, name='dispatch')
 class CustomLoginView(LoginView):
     template_name = 'base/login.html'
     fields = '__all__'
