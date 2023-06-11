@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>To DO Items</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            background: linear-gradient(to right, #eee7e7 0%, #b1b1ce 100%);
+            font-family: fantasy;
+            font-size: 20px;
+            padding-top: 50px;
+        }
+
+        h1,h2,h3,h4,h5,h6{
+            font-family: fantasy;
+            color: darkslategray;
+        }
+        h1{
+            text-align: center;
+        }
+
+        a,p{
+            color: darkslategray;
+            font-family: fantasy;
+        }
+
+        .container{
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            color: darkslategray;
+            background-color:white;
+        }
+
+        .header-bar{
+            color:white;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(to right, #7272c2 0%, #eee7e7 100%);
+        }
+
+        #header-bar-logout{
+            float:right;
+            text-decoration: none;
+            color: #7272c2;
+        }
+
+        .container .header-bar h1 {
+            color:black;
+        }
+        .container .header-bar h1 {
+            color:white;
+        }
+
+        .header-bar a{
+            color:white;
+            text-decoration: none;
+        }
+
+        .task-title{
+            display: flex;
+            align-content:center;
+        }
+
+        .task-wrapper{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color:white ;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .task-title a{
+            color: darkslategray;
+            text-decoration: none;
+            margin-left:10px;
+        }
+
+        .task-incomplete-icon{
+            height: 20px;
+            width: 20px;
+            background-color: #ff5e62;
+            border-radius: 50%;
+        }
+
+        .task-complete-icon{
+            height: 20px;
+            width: 20px;
+            background-color: #00cc99;
+            border-radius: 50%;
+        }
+
+        .delete-link{
+            text-decoration: none;
+            font-weight: 900;
+            color: #ff5e62;
+            font-size: 22px;
+            line-height: 0;
+        }
+
+        #search-add-wrapper{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #add-link{
+            text-decoration: none;
+            color: #7272c2;
+            font-size: 14px;
+            padding: 10px;
+            border: 1px solid #7272c2;
+            border-radius: 5px;
+        }
+
+        input[type=text],input[type=password],textarea{
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #7272c2;
+            border-radius: 5px;
+        }
+
+        label{
+            padding-top: 10px !important;
+            display: block;
+        }
+
+        .button{
+            background-color: white;
+            border: 1px solid #7272c2;
+            color: #7272c2;
+            padding: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .card-body{
+            padding: 20px;
+        }
+
+        .check-button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .check-button a{
+            padding:0 15px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        {% block content %}
+
+        {% endblock %}
+
+    </div>
+
+</body>
+</html>
